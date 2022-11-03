@@ -8,6 +8,72 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div class="container">
+      <form onsubmit="return false" id="form" class="form">
+        <h2 class="form__heading">Create Account</h2>
+        <div class="form__group">
+          <label for="username" class="form__label">Username</label>
+          <input
+            type="text"
+            id="username"
+            class="form__input"
+            name="username"
+            autocomplete="off"
+            placeholder="Pick a username"
+            required
+          />
+          <small></small>
+        </div>
+
+        <div class="form__group">
+          <label for="email" class="form__label">Email</label>
+          <input
+            type="email"
+            id="email"
+            class="form__input"
+            name="email"
+            autocomplete="off"
+            placeholder="Enter your email"
+            required
+          />
+          <small></small>
+        </div>
+
+        <div class="form__group">
+          <label for="password" class="form__label">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="form__input"
+            name="password"
+            autocomplete="off"
+            placeholder="Choose a strong password"
+            required
+          />
+          <small></small>
+        </div>
+
+        <div class="form__group">
+          <label for="confirm-password" class="form__label"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            id="confirm-password"
+            class="form__input"
+            name="confirm-password"
+            autocomplete="off"
+            placeholder="Retype your password"
+            required
+          />
+          <small></small>
+        </div>
+
+        <div class="form__group">
+          <input type="submit" id="submit" class="btn" value="Sign Up" />
+        </div>
+      </form>
+    </div>
     <script src="js/app.js"></script>
   </body>
 </html>

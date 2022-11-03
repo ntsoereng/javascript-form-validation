@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root {
+  --color-error: #dc3545;
+  --color-warning: #ffc107;
+  --color-success: #28a745;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #ffffff;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  width: 38rem;
+}
+
+.form {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;  */
+  justify-content: center;
+  gap: 1rem;
+}
+
+.form__heading {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.form__label {
+  display: block;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.form__input {
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  padding: 1rem;
+  /* margin-bottom: 1rem; */
+  font-size: 1.4rem;
+  display: block;
+  width: 100%;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #bbb;
+}
+
+.form__input:focus {
+  outline: 2px solid #bbb;
+}
+
+.form__group.error .form__input {
+  border-color: var(--color-error);
+}
+
+.form__group.success .form__input {
+  border-color: var(--color-success);
+}
+
+.form__group small {
+  color: var(--color-error);
+}
+
+/* ========== button ========== */
+.btn {
+  width: 100%;
+  padding: 3%;
+  background-color: #007bff;
+  border-bottom: 2px solid #007bff;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-radius: 3px;
+  color: #fff;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: #0069d9;
+  cursor: pointer;
+}
